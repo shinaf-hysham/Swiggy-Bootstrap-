@@ -1,0 +1,402 @@
+<html>
+
+<head>
+    <title>Swiggy</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .linear-gradient {
+            height: 95px;
+            background-color: white;
+            background-image: linear-gradient(to top, white, grey);
+        }
+
+        .leftarrow {
+            background-color: rgb(173, 190, 190);
+            border-radius: 50px;
+            height: 30px;
+
+        }
+
+        .rightarrow {
+            border-radius: 30px;
+            background-color: rgb(173, 190, 190);
+            height: 30px;
+        }
+
+        .arrowbtn {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .image {
+                width: 135px;
+
+
+            }
+        }
+
+        .image2 {
+            display: flex;
+        }
+
+        .card-img-top {
+            height: 200px;
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        .card {
+            margin-top: 20px;
+            border: none;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 20px;
+            margin-right: 12px;
+            padding: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.678);
+        }
+
+        .card-body>p {
+            margin: 0;
+        }
+
+        .col-sm-4 {
+            justify-items: center;
+
+        }
+
+        .card-img-overlay {
+            margin-top: 150px;
+            color: white;
+            position: absolute;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        .gradient-overlay {
+            position: absolute;
+            bottom: 165;
+            width: 95%;
+            height: 40%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="linear-gradient"></div>
+        <nav class="navbar navbar-expand-sm bg-white navbar-dark fixed-top">
+
+
+
+            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpg" alt="logo"></a>
+
+
+
+
+            <!-- Links -->
+            <ul class="navbar-nav ml-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown">
+                        <u><b>Other</b></u>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+
+                    </div>
+                </li>
+            </ul>
+
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item mr-5">
+                        <a class="nav-link text-dark" href="https://www.swiggy.com/corporate/"><i
+                                class="fas fa-desktop mr-2"></i> <b>Swiggy
+                                Corporate</b></a>
+                    </li>
+                    <li class="nav-item mr-4 ">
+                        <a class="nav-link text-dark" href="https://www.swiggy.com/search"><i
+                                class="fas fa-search mr-2"></i> <b>Search</b></a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link text-dark" href="https://www.swiggy.com/offers-near-me"><i
+                                class="fas fa-percent mr-2"></i> <b>Offers <sup
+                                    style="color:orange; font-size: 10px;"><b>NEW</b></sup></b></a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link text-dark" href="https://www.swiggy.com/support"><i
+                                class="fa fa-life-bouy mr-2"></i> <b>Help</b></a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link text-dark" href="https://www.swiggy.com/sign in"><i
+                                class="fas fa-user mr-2"></i> <b>Sign In</b></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-dark" href="https://www.swiggy.com/checkout"><i
+                                class="fa fa-shopping-cart mr-2"></i> <b>Cart</b></a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </nav>
+    </div>
+
+
+    <div class="container" style="margin-top: 30px;">
+        <div class="arrowbtn">
+            <h5><b>What's on your mind?</b></h5>
+            <div>
+                <button class="leftarrow">&#129028;</button>
+                <button class="rightarrow">&#129030;</button>
+            </div>
+        </div>
+        <div class="image2">
+            <img class="image" style="height: 185px;" src="Biryani.jpg">
+            <img class="image" style="height: 185px;" src="shawarma.jpg">
+            <img class="image" style="height: 185px;" src="Noodles.jpg">
+            <img class="image" style="height: 185px;" src="Pizzas.jpg">
+            <img class="image" style="height: 185px;" src="Shake.jpg">
+            <img class="image" style="height: 185px;" src="Momos.jpg">
+            <img class="image" style="height: 185px;" src="Parotta.jpg">
+        </div>
+    </div>
+    <div class="container">
+        <h5><b>Top Restaurent Chains In Malappuram</b></h5>
+    </div>
+    <div class="container" style="display: flex;">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%;">
+                    <a href="big falooda.html" style="color: black;">
+                    <img class="card-img-top" src="big falooda.jpg" alt="Card image">
+                    <div class="card-body">
+                        
+                        <h4 class="card-title"><b>The Big Falooda</b></h4>
+                        
+                        <p><span style="font-size: 20px;color: green;">&#9733;</span><b>4.4 .20-25 mins</b></p>
+                        <p class="card-text" style="color:rgba(97, 97, 97);">
+                            Arabian,Beverages,Juices,Kerala<br>Perinthalmanna Locality</p>
+                            </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-4">
+                <div class="card" style="width:100%;">
+                    <img class="card-img-top" src="nahdi.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <b>₹125 OFF ABOVE ₹249</b>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Nahdi Kuzhi Mandhi</b></h4>
+                        <p><span style="font-size: 20px;color: green;">&#9733;</span><b>4.5 . 25-30 mins</b></p>
+                        <p class="card-text" style="color:rgba(97, 97, 97);">Arabian, Middle Eastern <br>Perinthalmanna
+                            Locality</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4">
+                <div class="card" style="width:100%;">
+                    <img class="card-img-top" src="ajmeer.jpg" alt="Card image">
+
+                    <div class="gradient-overlay"></div>
+                    <div class="card-img-overlay">
+                        <b>10% OFF ABOVE ₹1499</b>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Ajmeer Hotel</b></h4>
+                        <p><span style="font-size: 20px;color: green;">&#9733;</span><b>4.3.40-45 mins</b></p>
+                        <p class="card-text" style="color:rgba(97, 97, 97);">Kerala,Kerala<br>Perinthalmanna</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 30px;">
+        <h5><b>Restaurants with online food delivery in Malappuram</b></h5>
+
+        <div>
+            <button type="button" class="btn btn-light">Filter
+                &#9902;
+            </button>
+            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Sort By</button>
+            <button type="button" class="btn btn-light">Fast Delivery</button>
+            <button type="button" class="btn btn-light">Ratings 4.0+</button>
+            <button type="button" class="btn btn-light">Pure Veg</button>
+            <button type="button" class="btn btn-light">Offers</button>
+            <button type="button" class="btn btn-light">Rs.300-rs.600</button>
+            <button type="button" class="btn btn-light">Less than Rs.300</button>
+
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="ec.jpg" alt="Card image">
+
+                    <div class="gradient-overlay"></div>
+                    <div class="card-img-overlay">
+                        <b>ITEMS AT ₹79</b>
+                    </div>
+
+
+                    <div class="card-body">
+                        <h4 class="card-title"><b>E C FOOD PRODUCT</b></h4>
+                        <p><span style="font-size: 20px;color: green;">&#9733;</span><b>4.2 .25-30 mins</b></p>
+                        <p class="card-text" style="color:rgba(97, 97, 97);">Indian,Snacks,Kerala<br>Perinthalmanna </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="turk.jpg" alt="Card image">
+
+                    <div class="gradient-overlay"></div>
+                    <div class="card-img-overlay">
+                        <b>10% OFF UPTO ₹40</b>
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Turk Doner</b></h4>
+                        <p><span style="font-size: 20px;color: green;">&#9733;</span><b>4.2 .20-25 mins</b></p>
+                        <p class="card-text" style="color:rgba(97, 97, 97);">Arabian,Burgers,Beverages<br>Perinthalmanna
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="big falooda.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>The Big Falooda</b></h4>
+                        <p><span style="font-size: 20px;color: green;">&#9733;</span><b>4.4 .20-25 mins</b></p>
+                        <p class="card-text" style="color:rgba(97, 97, 97);">
+                            Arabian,Beverages,Juices,Kerala<br>Perinthalmanna Locality</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="t & t.jpg" alt="Card image">
+
+                    <div class="gradient-overlay"></div>
+                    <div class="card-img-overlay">
+                        <b>₹125 OFF ABOVE ₹249</b>
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title"><b>T&T Perinthalmanna</b></h4>
+                        <p><span style="font-size: 20px;color: green;">&#9733;</span><b>3.9 .45-50 mins</b></p>
+                        <p class="card-text" style="color:rgba(97, 97, 97);">Grill<br>Perinthalmanna</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="waffle.jpg" alt="Card image">
+
+                    <div class="gradient-overlay"></div>
+                    <div class="card-img-overlay">
+                        <b>20% OFF UPTO ₹50</b>
+                    </div>
+
+
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Waffle Date</b></h4>
+                        <p><span style="font-size: 20px;color: green;">&#9733;</span><b>4.6 .40-45 mins</b></p>
+                        <p class="card-text" style="color:rgba(97, 97, 97);">Sweets,Waffle,Cafe,Kerala<br>Perinthalmanna
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4">
+
+                <div class="card" style="width: 100%;">
+
+                    <img class="card-img-top" src="lazza.jpg" alt="Card image">
+
+                    <div class="gradient-overlay"></div>
+                    <div class="card-img-overlay">
+                        <b>₹50 OFF ABOVE ₹199</b>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Lazza Ice Cream</b></h4>
+                        <p><span style="font-size: 20px;color: green;">&#9733;</span><b>4.2 .35-40 mins</b></p>
+                        <p class="card-text" style="color:rgba(97, 97, 97);">Desserts,Ice Cream,Ice Cream
+                            Cake...<br>Perinthalmanna</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
